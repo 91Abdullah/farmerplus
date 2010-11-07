@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerPlusClient", "FarmerPlusClient\FarmerPlusClient.csproj", "{9BC3FB23-8BF1-455B-A84C-A1585971F93A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerPlusWebServicesEngine", "FarmerPlusWebServices\FarmerPlusWebServicesEngine.csproj", "{497DD516-B9A2-48E3-A237-F64FEDBFA6F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerPlusBusinessManagementLayer", "BusinessManagementLayer\FarmerPlusBusinessManagementLayer.csproj", "{22BA128A-92BE-4AC7-8954-D21E5428D391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerPlusDataAccessLayer", "FarmerPlusDataAccessLayer\FarmerPlusDataAccessLayer.csproj", "{1758229E-1765-4A06-8BE3-2B993B0273FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerPlusUnitTestLab", "FarmerPlusUnitTestLab\FarmerPlusUnitTestLab.csproj", "{62D41CDE-8A6A-411F-8619-D64893AF0107}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5D38D50D-7462-46B7-ACFD-5D741065754B}"
+	ProjectSection(SolutionItems) = preProject
+		FarmerPlusClient.vsmdi = FarmerPlusClient.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = FarmerPlusClient.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BC3FB23-8BF1-455B-A84C-A1585971F93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC3FB23-8BF1-455B-A84C-A1585971F93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC3FB23-8BF1-455B-A84C-A1585971F93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC3FB23-8BF1-455B-A84C-A1585971F93A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{497DD516-B9A2-48E3-A237-F64FEDBFA6F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{497DD516-B9A2-48E3-A237-F64FEDBFA6F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{497DD516-B9A2-48E3-A237-F64FEDBFA6F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{497DD516-B9A2-48E3-A237-F64FEDBFA6F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22BA128A-92BE-4AC7-8954-D21E5428D391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22BA128A-92BE-4AC7-8954-D21E5428D391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22BA128A-92BE-4AC7-8954-D21E5428D391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22BA128A-92BE-4AC7-8954-D21E5428D391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1758229E-1765-4A06-8BE3-2B993B0273FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1758229E-1765-4A06-8BE3-2B993B0273FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1758229E-1765-4A06-8BE3-2B993B0273FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1758229E-1765-4A06-8BE3-2B993B0273FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D41CDE-8A6A-411F-8619-D64893AF0107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D41CDE-8A6A-411F-8619-D64893AF0107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D41CDE-8A6A-411F-8619-D64893AF0107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D41CDE-8A6A-411F-8619-D64893AF0107}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
