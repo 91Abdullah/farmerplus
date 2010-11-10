@@ -2,6 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerPlusClient", "FarmerPlusClient\FarmerPlusClient.csproj", "{9BC3FB23-8BF1-455B-A84C-A1585971F93A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{497DD516-B9A2-48E3-A237-F64FEDBFA6F7} = {497DD516-B9A2-48E3-A237-F64FEDBFA6F7}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerPlusWebServicesEngine", "FarmerPlusWebServices\FarmerPlusWebServicesEngine.csproj", "{497DD516-B9A2-48E3-A237-F64FEDBFA6F7}"
 EndProject

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4bc4e1e1-8447-449a-91d7-a4d3cb9bef02" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8731/Design_Time_Addresses/FarmerPlusWebServices/HelloWorldService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="79b0c873-3fe5-4690-81a0-cc79c27f4661" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/FarmerPlusWebServices/HelloWorldService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="a4f8592f-e8ef-4a63-b455-529a5938b19c" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/FarmerPlusWebServices/HelloWorldService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="d44d30cd-6707-4b57-a40e-a1200e1485c9" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/FarmerPlusWebServices/HelloWorldService/mex" />
+    <MetadataFile FileName="FarmerPlusDataAccessLayer.xsd" MetadataType="Schema" ID="edbdb8f3-b645-4d11-b99e-058a17a1011f" SourceId="1" SourceUrl="http://localhost:8731/Design_Time_Addresses/FarmerPlusWebServices/HelloWorldService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

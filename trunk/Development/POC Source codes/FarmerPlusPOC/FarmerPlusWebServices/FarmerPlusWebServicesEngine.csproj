@@ -48,12 +48,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IService1.cs" />
+    <Compile Include="HelloWorldService.cs" />
+    <Compile Include="IHelloWorldService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessManagementLayer\FarmerPlusBusinessManagementLayer.csproj">
+      <Project>{22BA128A-92BE-4AC7-8954-D21E5428D391}</Project>
+      <Name>FarmerPlusBusinessManagementLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FarmerPlusDataAccessLayer\FarmerPlusDataAccessLayer.csproj">
+      <Project>{1758229E-1765-4A06-8BE3-2B993B0273FD}</Project>
+      <Name>FarmerPlusDataAccessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
