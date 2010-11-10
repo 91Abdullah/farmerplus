@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLs\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -46,6 +50,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AuthoringTests.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessManagementLayer\FarmerPlusBusinessManagementLayer.csproj">
+      <Project>{22BA128A-92BE-4AC7-8954-D21E5428D391}</Project>
+      <Name>FarmerPlusBusinessManagementLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FarmerPlusClient\FarmerPlusClient.csproj">
+      <Project>{9BC3FB23-8BF1-455B-A84C-A1585971F93A}</Project>
+      <Name>FarmerPlusClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FarmerPlusDataAccessLayer\FarmerPlusDataAccessLayer.csproj">
+      <Project>{1758229E-1765-4A06-8BE3-2B993B0273FD}</Project>
+      <Name>FarmerPlusDataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FarmerPlusWebServices\FarmerPlusWebServicesEngine.csproj">
+      <Project>{497DD516-B9A2-48E3-A237-F64FEDBFA6F7}</Project>
+      <Name>FarmerPlusWebServicesEngine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
