@@ -10,6 +10,7 @@ C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC
 C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\FarmerPlusClient.HelloWorld.resources
 C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\FarmerPlusClient.Properties.Resources.resources
-C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\FarmerPlusClient.csproj.GenerateResource.Cache
 C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\FarmerPlusClient.exe
 C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\FarmerPlusClient.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\ResGen.read.1.tlog
+C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\ResGen.write.1.tlog
