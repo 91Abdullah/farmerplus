@@ -1,6 +1,12 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5D38D50D-7462-46B7-ACFD-5D741065754B}"
+	ProjectSection(SolutionItems) = preProject
+		FarmerPlusClient.vsmdi = FarmerPlusClient.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerPlusClient", "FarmerPlusClient\FarmerPlusClient.csproj", "{9BC3FB23-8BF1-455B-A84C-A1585971F93A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{497DD516-B9A2-48E3-A237-F64FEDBFA6F7} = {497DD516-B9A2-48E3-A237-F64FEDBFA6F7}
@@ -13,12 +19,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerPlusDataAccessLayer", "FarmerPlusDataAccessLayer\FarmerPlusDataAccessLayer.csproj", "{1758229E-1765-4A06-8BE3-2B993B0273FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerPlusUnitTestLab", "FarmerPlusUnitTestLab\FarmerPlusUnitTestLab.csproj", "{62D41CDE-8A6A-411F-8619-D64893AF0107}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5D38D50D-7462-46B7-ACFD-5D741065754B}"
-	ProjectSection(SolutionItems) = preProject
-		FarmerPlusClient.vsmdi = FarmerPlusClient.vsmdi
-		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution

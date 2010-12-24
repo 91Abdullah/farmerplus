@@ -31,7 +31,8 @@ namespace FarmerPlusDataAccessLayer
         {            
             // Create the Database object, using the default database service.            
             //"ConnectionString"
-            _db = DatabaseFactory.CreateDatabase("Driver={MySQL ODBC 3.51 Driver};Server=localhost:3306;Database=farmerplus;uid=myID;pwd=root;option=3");
+            _db = DatabaseFactory.CreateDatabase
+                ("ConnectionString");
             _connection = _db.CreateConnection();
             //_connection.Open();
         }       

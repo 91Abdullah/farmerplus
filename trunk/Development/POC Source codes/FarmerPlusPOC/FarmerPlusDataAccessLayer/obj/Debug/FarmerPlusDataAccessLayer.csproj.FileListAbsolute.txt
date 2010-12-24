@@ -12,3 +12,4 @@ C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC
 C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusDataAccessLayer\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
 C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusDataAccessLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
 C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusDataAccessLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusDataAccessLayer\bin\Debug\MySql.Data.dll
