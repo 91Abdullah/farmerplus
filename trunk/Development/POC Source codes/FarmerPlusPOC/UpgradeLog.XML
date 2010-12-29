@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="FarmerPlusPOC">
+</Property><Property Name="Solution File" Value="C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusPOC.sln">
+</Property><Property Name="Date" Value="Tuesday, December 07, 2010">
+</Property><Property Name="Time" Value="21:35 PM">
+</Property></Properties><Event ErrorLevel="0" Project="FarmerPlusClient" Source="FarmerPlusClient\FarmerPlusClient.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FarmerPlusClient" Source="FarmerPlusClient\FarmerPlusClient.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FarmerPlusWebServicesEngine" Source="FarmerPlusWebServices\FarmerPlusWebServicesEngine.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FarmerPlusWebServicesEngine" Source="FarmerPlusWebServices\FarmerPlusWebServicesEngine.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FarmerPlusBusinessManagementLayer" Source="BusinessManagementLayer\FarmerPlusBusinessManagementLayer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FarmerPlusBusinessManagementLayer" Source="BusinessManagementLayer\FarmerPlusBusinessManagementLayer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FarmerPlusDataAccessLayer" Source="FarmerPlusDataAccessLayer\FarmerPlusDataAccessLayer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FarmerPlusDataAccessLayer" Source="FarmerPlusDataAccessLayer\FarmerPlusDataAccessLayer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FarmerPlusUnitTestLab" Source="FarmerPlusUnitTestLab\FarmerPlusUnitTestLab.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FarmerPlusUnitTestLab" Source="FarmerPlusUnitTestLab\FarmerPlusUnitTestLab.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="FarmerPlusPOC.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="FarmerPlusPOC.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FarmerPlusClient" Source="FarmerPlusClient\FarmerPlusClient.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FarmerPlusWebServicesEngine" Source="FarmerPlusWebServices\FarmerPlusWebServicesEngine.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FarmerPlusBusinessManagementLayer" Source="BusinessManagementLayer\FarmerPlusBusinessManagementLayer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FarmerPlusDataAccessLayer" Source="FarmerPlusDataAccessLayer\FarmerPlusDataAccessLayer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="3" Project="" Source="FarmerPlusClient.vsmdi" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="FarmerPlusClient.vsmdi" Description="The file was converted to the current format.">
+</Event><Event ErrorLevel="3" Project="" Source="LocalTestRun.testrunconfig" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="LocalTestRun.testrunconfig" Description="The file was converted to the current format.">
+</Event><Event ErrorLevel="0" Project="FarmerPlusUnitTestLab" Source="FarmerPlusUnitTestLab\FarmerPlusUnitTestLab.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

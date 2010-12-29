@@ -31,8 +31,7 @@ namespace FarmerPlusDataAccessLayer
         {            
             // Create the Database object, using the default database service.            
             //"ConnectionString"
-            _db = DatabaseFactory.CreateDatabase
-                ("ConnectionString");
+            _db = DatabaseFactory.CreateDatabase("ConnectionString");
             _connection = _db.CreateConnection();
             //_connection.Open();
         }       
