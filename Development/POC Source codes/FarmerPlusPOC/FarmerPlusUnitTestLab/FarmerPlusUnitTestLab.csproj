@@ -61,9 +61,9 @@
       <Project>{22BA128A-92BE-4AC7-8954-D21E5428D391}</Project>
       <Name>FarmerPlusBusinessManagementLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FarmerPlusClient\FarmerPlusClient.csproj">
+    <ProjectReference Include="..\FarmerPlusClient\CMS_Client.csproj">
       <Project>{9BC3FB23-8BF1-455B-A84C-A1585971F93A}</Project>
-      <Name>FarmerPlusClient</Name>
+      <Name>CMS_Client</Name>
     </ProjectReference>
     <ProjectReference Include="..\FarmerPlusDataAccessLayer\FarmerPlusDataAccessLayer.csproj">
       <Project>{1758229E-1765-4A06-8BE3-2B993B0273FD}</Project>

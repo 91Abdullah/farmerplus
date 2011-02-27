@@ -70,6 +70,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_Crop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Crop.Designer.cs">
+      <DependentUpon>Add_Crop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Fertilizer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Fertilizer.Designer.cs">
+      <DependentUpon>Add_Fertilizer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Pesticide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Pesticide.Designer.cs">
+      <DependentUpon>Add_Pesticide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Seed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Seed.Designer.cs">
+      <DependentUpon>Add_Seed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CMSMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSMainForm.Designer.cs">
+      <DependentUpon>CMSMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crop_Mapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crop_Mapping.Designer.cs">
+      <DependentUpon>Crop_Mapping.cs</DependentUpon>
+    </Compile>
     <Compile Include="HelloWorld.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +114,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Add_Crop.resx">
+      <DependentUpon>Add_Crop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Fertilizer.resx">
+      <DependentUpon>Add_Fertilizer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Pesticide.resx">
+      <DependentUpon>Add_Pesticide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Seed.resx">
+      <DependentUpon>Add_Seed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSMainForm.resx">
+      <DependentUpon>CMSMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crop_Mapping.resx">
+      <DependentUpon>Crop_Mapping.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HelloWorld.resx">
       <DependentUpon>HelloWorld.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -132,6 +186,9 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <None Include="Service References\ServiceReference1\service1.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

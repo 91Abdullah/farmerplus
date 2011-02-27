@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using MySql.Data.MySqlClient;
+using System.Data;
 
 
 namespace FarmerPlusDataAccessLayer
@@ -10,13 +12,30 @@ namespace FarmerPlusDataAccessLayer
     {
         public HelloWorldDAO GetHelloWorldMessage(int id)
         {
-            DBUtility db = new DBUtility();
+            MySqlConnection conn = DBUtility.getConnection();
 
-            db.GetDataSetFromQuery("selct value from helloworld where id = " + id);            
+            try
+            {
+               
+                MySqlDataAdapter dapt = new MySqlDataAdapter("select value from helloworld where id =  " + id.ToString() , conn);
 
-            HelloWorldDAO _helloWorldDAO = new HelloWorldDAO();
-            _helloWorldDAO.StrHelloWorldMessage = "Hello World from Farmer Plus";
-            return _helloWorldDAO;
+                DataSet dataSet = new DataSet();
+                dapt.Fill(dataSet);
+
+                HelloWorldDAO hwdtoreturn = new HelloWorldDAO();
+                hwdtoreturn.StrHelloWorldMessage = dataSet.Tables[0].Rows[0][0].ToString();
+
+                conn.Close();
+
+                return hwdtoreturn;
+            }
+            catch (Exception ex)
+            {
+                DBUtility.closeConnection(conn);
+                return null;
+            }
         }
     }
 }
+
+
