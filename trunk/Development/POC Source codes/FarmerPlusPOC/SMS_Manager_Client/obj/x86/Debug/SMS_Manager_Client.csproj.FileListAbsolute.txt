@@ -1,0 +1,6 @@
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\SMS_Manager_Client\bin\Debug\SMS_Manager_Client.exe.config
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\SMS_Manager_Client\bin\Debug\SMS_Manager_Client.exe
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\SMS_Manager_Client\bin\Debug\SMS_Manager_Client.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\SMS_Manager_Client\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\SMS_Manager_Client\obj\x86\Debug\SMS_Manager_Client.exe
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\SMS_Manager_Client\obj\x86\Debug\SMS_Manager_Client.pdb

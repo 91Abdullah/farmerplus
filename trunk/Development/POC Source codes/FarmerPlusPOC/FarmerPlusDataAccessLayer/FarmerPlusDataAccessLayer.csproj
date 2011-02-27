@@ -90,6 +90,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataServices\CommonHelper.cs" />
     <Compile Include="DataServices\HelloWorldDBService.cs" />
     <Compile Include="DataObjects\HelloWorldDAO.cs" />
     <Compile Include="DBUtility.cs" />

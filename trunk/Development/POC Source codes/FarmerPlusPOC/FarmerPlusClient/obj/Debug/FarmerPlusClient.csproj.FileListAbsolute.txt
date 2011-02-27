@@ -14,3 +14,6 @@ C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC
 C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\FarmerPlusClient.pdb
 C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\ResGen.read.1.tlog
 C:\Users\tahirrauf\Desktop\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\ResGen.write.1.tlog
+C:\Users\tahirrauf\Desktop\Miscellaneous\BackupAt-9_JAN_2010\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\bin\Debug\FarmerPlusClient.exe.config
+C:\Users\tahirrauf\Desktop\Miscellaneous\BackupAt-9_JAN_2010\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\FarmerPlusClient.exe
+C:\Users\tahirrauf\Desktop\Miscellaneous\BackupAt-9_JAN_2010\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\FarmerPlusClient\obj\Debug\FarmerPlusClient.pdb
