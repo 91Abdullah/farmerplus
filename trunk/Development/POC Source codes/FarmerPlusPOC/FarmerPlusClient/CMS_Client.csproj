@@ -10,12 +10,13 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FarmerPlusClient</RootNamespace>
     <AssemblyName>FarmerPlusClient</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,6 +36,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AudioSoundRecorder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6dd52dbb299cc1b2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\AudioSoundRecorder.dll</HintPath>
+    </Reference>
+    <Reference Include="Comm2IP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Comm2IP.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core, Version=0.44.0.5, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLLs\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
@@ -46,6 +59,10 @@
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLLs\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="smslib-3.5.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\smslib-3.5.0.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -70,6 +87,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_AgriEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_AgriEquipment.Designer.cs">
+      <DependentUpon>Add_AgriEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Company.Designer.cs">
+      <DependentUpon>Add_Company.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_Crop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,11 +123,35 @@
     <Compile Include="Add_Seed.Designer.cs">
       <DependentUpon>Add_Seed.cs</DependentUpon>
     </Compile>
+    <Compile Include="CMSComplaintLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSComplaintLog.Designer.cs">
+      <DependentUpon>CMSComplaintLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CMSLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSLocation.Designer.cs">
+      <DependentUpon>CMSLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CMSLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSLogin.Designer.cs">
+      <DependentUpon>CMSLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="CMSMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CMSMainForm.Designer.cs">
       <DependentUpon>CMSMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CMSWarningManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMSWarningManager.Designer.cs">
+      <DependentUpon>CMSWarningManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Crop_Mapping.cs">
       <SubType>Form</SubType>
@@ -106,14 +159,50 @@
     <Compile Include="Crop_Mapping.Designer.cs">
       <DependentUpon>Crop_Mapping.cs</DependentUpon>
     </Compile>
+    <Compile Include="FarmerPlusRecorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HelloWorld.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HelloWorld.Designer.cs">
       <DependentUpon>HelloWorld.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhoneRanges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhoneRanges.Designer.cs">
+      <DependentUpon>PhoneRanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServiceReferenceCommonHelper\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferenceCropCommonHelper\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WeatherServicesReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SMSWeather.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMSWeather.Designer.cs">
+      <DependentUpon>SMSWeather.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_AgriEquipment.resx">
+      <DependentUpon>Add_AgriEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Company.resx">
+      <DependentUpon>Add_Company.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add_Crop.resx">
       <DependentUpon>Add_Crop.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,15 +215,33 @@
     <EmbeddedResource Include="Add_Seed.resx">
       <DependentUpon>Add_Seed.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CMSComplaintLog.resx">
+      <DependentUpon>CMSComplaintLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSLocation.resx">
+      <DependentUpon>CMSLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSLogin.resx">
+      <DependentUpon>CMSLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CMSMainForm.resx">
       <DependentUpon>CMSMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMSWarningManager.resx">
+      <DependentUpon>CMSWarningManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Crop_Mapping.resx">
       <DependentUpon>Crop_Mapping.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FarmerPlusRecorder.resx">
+      <DependentUpon>FarmerPlusRecorder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HelloWorld.resx">
       <DependentUpon>HelloWorld.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhoneRanges.resx">
+      <DependentUpon>PhoneRanges.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -146,49 +253,124 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SMSWeather.resx">
+      <DependentUpon>SMSWeather.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\DataSources\FarmerPlusDataObjectLayer.Conditions.datasource" />
+    <None Include="Properties\DataSources\SMS_Manager_Client.ServiceReferenceForSMS.HelloWorldDAO.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Service References\ServiceReference1\service.wsdl" />
-    <None Include="Service References\ServiceReference1\service.xsd" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Service References\ServiceReference1\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
+    <None Include="Service References\ServiceReferenceCommonHelper\FarmerPlusDataObjectLayer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceCommonHelper\service.wsdl" />
+    <None Include="Service References\ServiceReferenceCommonHelper\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceCommonHelper\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceCommonHelper\service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceCropCommonHelper\FarmerPlusDataObjectLayer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceCropCommonHelper\service.wsdl" />
+    <None Include="Service References\ServiceReferenceCropCommonHelper\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceCropCommonHelper\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceCropCommonHelper\service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WeatherServicesReference\FarmerPlusDataObjectLayer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WeatherServicesReference\service.wsdl" />
+    <None Include="Service References\WeatherServicesReference\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WeatherServicesReference\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Properties\DataSources\FarmerPlusDataAccessLayer.HelloWorldDAO.datasource" />
-    <None Include="Service References\ServiceReference1\FarmerPlusClient.ServiceReference1.HelloWorldDAO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ServiceReference1\FarmerPlusDataAccessLayer.xsd" />
-    <None Include="Service References\ServiceReference1\Reference.svcmap">
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FarmerPlusDataObjectLayer\FarmerPlusDataObjectLayer.csproj">
+      <Project>{5112EE0A-FFB5-472E-8CFF-EF02E1EFDB55}</Project>
+      <Name>FarmerPlusDataObjectLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS_Services\SMS_Services.csproj">
+      <Project>{BA3BD2EC-5AC4-43C3-9D11-E7FFB7DE0EC4}</Project>
+      <Name>SMS_Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReferenceCommonHelper\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceCropCommonHelper\" />
+    <WCFMetadataStorage Include="Service References\WeatherServicesReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceCropCommonHelper\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceCropCommonHelper\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceCropCommonHelper\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\ServiceReference1\service1.xsd" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReferenceCommonHelper\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceCommonHelper\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceCommonHelper\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WeatherServicesReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WeatherServicesReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WeatherServicesReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

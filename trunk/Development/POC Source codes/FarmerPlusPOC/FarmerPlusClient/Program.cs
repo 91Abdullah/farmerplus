@@ -15,8 +15,19 @@ namespace FarmerPlusClient
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            
-            Application.Run(new HelloWorld());
+
+            //   Application.Run(new HelloWorld());
+
+         Application.Run(new CMSMainForm());
+
+        // Application.Run(new SMSWeather());
+
+
+
+
         }
+
+
+       
     }
 }
