@@ -1,0 +1,8 @@
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\SMS_Services\bin\Debug\SMS_Services.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\SMS_Services\bin\Debug\SMS_Services.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\SMS_Services\bin\Debug\Comm2IP.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\SMS_Services\bin\Debug\IKVM.OpenJDK.Core.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\SMS_Services\bin\Debug\smslib-3.5.0.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\SMS_Services\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\SMS_Services\obj\Debug\SMS_Services.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\SMS_Services\obj\Debug\SMS_Services.pdb
