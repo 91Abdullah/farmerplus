@@ -12,11 +12,12 @@
     <AssemblyName>FarmerPlusWebServices</AssemblyName>
     <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,10 +37,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\..\MySql.Data.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -51,14 +50,21 @@
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonHelperService.cs" />
+    <Compile Include="CropHelperServices.cs" />
     <Compile Include="HelloWorldService.cs" />
+    <Compile Include="ICommonHelperService.cs" />
+    <Compile Include="ICropHelperServices.cs" />
     <Compile Include="IHelloWorldService.cs" />
+    <Compile Include="IWeatherServices.cs" />
+    <Compile Include="WeatherServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +80,10 @@
     <ProjectReference Include="..\FarmerPlusDataAccessLayer\FarmerPlusDataAccessLayer.csproj">
       <Project>{1758229E-1765-4A06-8BE3-2B993B0273FD}</Project>
       <Name>FarmerPlusDataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FarmerPlusDataObjectLayer\FarmerPlusDataObjectLayer.csproj">
+      <Project>{5112EE0A-FFB5-472E-8CFF-EF02E1EFDB55}</Project>
+      <Name>FarmerPlusDataObjectLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

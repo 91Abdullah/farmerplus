@@ -1,0 +1,13 @@
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\obj\Release\ResolveAssemblyReference.cache
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\bin\Release\FarmerPlusWebServices.dll.config
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\bin\Release\FarmerPlusWebServices.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\bin\Release\FarmerPlusWebServices.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\bin\Release\BusinessManagementLayer.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\bin\Release\FarmerPlusDataAccessLayer.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\bin\Release\FarmerPlusDataObjectLayer.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\bin\Release\BusinessManagementLayer.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\bin\Release\FarmerPlusDataAccessLayer.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\bin\Release\FarmerPlusDataObjectLayer.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\obj\Release\FarmerPlusWebServices.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\obj\Release\FarmerPlusWebServices.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusWebServices\bin\Release\MySql.Data.dll
