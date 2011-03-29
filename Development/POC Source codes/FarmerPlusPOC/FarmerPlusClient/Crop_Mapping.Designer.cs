@@ -28,68 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.comboBoxCrops = new System.Windows.Forms.ComboBox();
+            this.btnNewCrop = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewComboBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewFertilizers = new System.Windows.Forms.DataGridView();
+            this.ColumnFerts = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewComboBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewSeeds = new System.Windows.Forms.DataGridView();
+            this.ColumnSeed = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.ColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewComboBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewPesticides = new System.Windows.Forms.DataGridView();
+            this.ColumnPest = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerReapEnd = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerReapStart = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerCultEnd = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerCultStart = new System.Windows.Forms.DateTimePicker();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.buttonIVR = new System.Windows.Forms.Button();
+            this.buttonSMS = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxDistricts = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFertilizers)).BeginInit();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeeds)).BeginInit();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesticides)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // comboBoxCrops
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(73, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(169, 21);
-            this.comboBox1.TabIndex = 0;
+            this.comboBoxCrops.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCrops.FormattingEnabled = true;
+            this.comboBoxCrops.Location = new System.Drawing.Point(109, 61);
+            this.comboBoxCrops.Name = "comboBoxCrops";
+            this.comboBoxCrops.Size = new System.Drawing.Size(169, 21);
+            this.comboBoxCrops.TabIndex = 0;
+            this.comboBoxCrops.SelectedIndexChanged += new System.EventHandler(this.comboBoxCrops_SelectedIndexChanged);
             // 
-            // button1
+            // btnNewCrop
             // 
-            this.button1.Location = new System.Drawing.Point(292, 30);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Add New Crop";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNewCrop.Location = new System.Drawing.Point(313, 61);
+            this.btnNewCrop.Name = "btnNewCrop";
+            this.btnNewCrop.Size = new System.Drawing.Size(101, 23);
+            this.btnNewCrop.TabIndex = 2;
+            this.btnNewCrop.Text = "Add New Crop";
+            this.btnNewCrop.UseVisualStyleBackColor = true;
+            this.btnNewCrop.Click += new System.EventHandler(this.btnNewCrop_Click);
             // 
             // groupBox1
             // 
@@ -98,143 +99,106 @@
             this.groupBox1.Controls.Add(this.groupBox6);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Location = new System.Drawing.Point(15, 121);
+            this.groupBox1.Location = new System.Drawing.Point(51, 121);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(853, 393);
+            this.groupBox1.Size = new System.Drawing.Size(1153, 451);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cultivatio Information";
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button3);
-            this.groupBox4.Controls.Add(this.dataGridView1);
-            this.groupBox4.Location = new System.Drawing.Point(394, 208);
+            this.groupBox4.Controls.Add(this.dataGridViewFertilizers);
+            this.groupBox4.Location = new System.Drawing.Point(684, 229);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(361, 166);
+            this.groupBox4.Size = new System.Drawing.Size(449, 184);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Fertilizers";
             // 
-            // button3
+            // dataGridViewFertilizers
             // 
-            this.button3.Location = new System.Drawing.Point(238, 137);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(117, 23);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Add New Fertilizer";
-            this.button3.UseVisualStyleBackColor = true;
+            this.dataGridViewFertilizers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFertilizers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnFerts});
+            this.dataGridViewFertilizers.Location = new System.Drawing.Point(7, 20);
+            this.dataGridViewFertilizers.Name = "dataGridViewFertilizers";
+            this.dataGridViewFertilizers.Size = new System.Drawing.Size(436, 158);
+            this.dataGridViewFertilizers.TabIndex = 2;
             // 
-            // dataGridView1
+            // ColumnFerts
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewComboBoxColumn3});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(349, 117);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // dataGridViewComboBoxColumn3
-            // 
-            this.dataGridViewComboBoxColumn3.HeaderText = "Fertilizer";
-            this.dataGridViewComboBoxColumn3.Name = "dataGridViewComboBoxColumn3";
+            this.ColumnFerts.HeaderText = "ColumnFerts";
+            this.ColumnFerts.Name = "ColumnFerts";
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.button5);
-            this.groupBox7.Controls.Add(this.dataGridView3);
-            this.groupBox7.Location = new System.Drawing.Point(17, 208);
+            this.groupBox7.Controls.Add(this.dataGridViewSeeds);
+            this.groupBox7.Location = new System.Drawing.Point(7, 235);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(361, 166);
+            this.groupBox7.Size = new System.Drawing.Size(641, 184);
             this.groupBox7.TabIndex = 4;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Seeds";
             // 
-            // button5
+            // dataGridViewSeeds
             // 
-            this.button5.Location = new System.Drawing.Point(255, 137);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 23);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Add New Seed";
-            this.button5.UseVisualStyleBackColor = true;
+            this.dataGridViewSeeds.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSeeds.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnSeed,
+            this.ColumnPrice});
+            this.dataGridViewSeeds.Location = new System.Drawing.Point(13, 20);
+            this.dataGridViewSeeds.Name = "dataGridViewSeeds";
+            this.dataGridViewSeeds.Size = new System.Drawing.Size(622, 153);
+            this.dataGridViewSeeds.TabIndex = 3;
             // 
-            // dataGridView3
+            // ColumnSeed
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewComboBoxColumn2});
-            this.dataGridView3.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(349, 117);
-            this.dataGridView3.TabIndex = 0;
+            this.ColumnSeed.HeaderText = "ColumnSeed";
+            this.ColumnSeed.Name = "ColumnSeed";
             // 
-            // dataGridViewComboBoxColumn2
+            // ColumnPrice
             // 
-            this.dataGridViewComboBoxColumn2.HeaderText = "Seed";
-            this.dataGridViewComboBoxColumn2.Name = "dataGridViewComboBoxColumn2";
+            this.ColumnPrice.HeaderText = "ColumnPrice";
+            this.ColumnPrice.Name = "ColumnPrice";
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.button4);
-            this.groupBox6.Controls.Add(this.dataGridView2);
-            this.groupBox6.Location = new System.Drawing.Point(475, 20);
+            this.groupBox6.Controls.Add(this.dataGridViewPesticides);
+            this.groupBox6.Location = new System.Drawing.Point(678, 20);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(361, 166);
+            this.groupBox6.Size = new System.Drawing.Size(455, 190);
             this.groupBox6.TabIndex = 3;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Pesticides";
             // 
-            // button4
+            // dataGridViewPesticides
             // 
-            this.button4.Location = new System.Drawing.Point(236, 137);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(119, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Add New Pesticide";
-            this.button4.UseVisualStyleBackColor = true;
+            this.dataGridViewPesticides.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPesticides.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnPest});
+            this.dataGridViewPesticides.Location = new System.Drawing.Point(12, 19);
+            this.dataGridViewPesticides.Name = "dataGridViewPesticides";
+            this.dataGridViewPesticides.Size = new System.Drawing.Size(437, 160);
+            this.dataGridViewPesticides.TabIndex = 1;
             // 
-            // dataGridView2
+            // ColumnPest
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewComboBoxColumn1,
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.dataGridView2.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(349, 117);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // dataGridViewComboBoxColumn1
-            // 
-            this.dataGridViewComboBoxColumn1.HeaderText = "Pest";
-            this.dataGridViewComboBoxColumn1.Name = "dataGridViewComboBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Start Date";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "End Date";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.ColumnPest.HeaderText = "ColumnPest";
+            this.ColumnPest.Name = "ColumnPest";
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.dateTimePicker3);
-            this.groupBox3.Controls.Add(this.dateTimePicker4);
-            this.groupBox3.Location = new System.Drawing.Point(237, 20);
+            this.groupBox3.Controls.Add(this.dateTimePickerReapEnd);
+            this.groupBox3.Controls.Add(this.dateTimePickerReapStart);
+            this.groupBox3.Location = new System.Drawing.Point(344, 20);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(211, 166);
+            this.groupBox3.Size = new System.Drawing.Size(304, 190);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Reaping Times";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // label3
             // 
@@ -254,29 +218,29 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Start Date";
             // 
-            // dateTimePicker3
+            // dateTimePickerReapEnd
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(66, 82);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(130, 20);
-            this.dateTimePicker3.TabIndex = 3;
+            this.dateTimePickerReapEnd.Location = new System.Drawing.Point(66, 82);
+            this.dateTimePickerReapEnd.Name = "dateTimePickerReapEnd";
+            this.dateTimePickerReapEnd.Size = new System.Drawing.Size(209, 20);
+            this.dateTimePickerReapEnd.TabIndex = 3;
             // 
-            // dateTimePicker4
+            // dateTimePickerReapStart
             // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(65, 36);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(131, 20);
-            this.dateTimePicker4.TabIndex = 2;
+            this.dateTimePickerReapStart.Location = new System.Drawing.Point(65, 36);
+            this.dateTimePickerReapStart.Name = "dateTimePickerReapStart";
+            this.dateTimePickerReapStart.Size = new System.Drawing.Size(210, 20);
+            this.dateTimePickerReapStart.TabIndex = 2;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.dateTimePickerCultEnd);
+            this.groupBox2.Controls.Add(this.dateTimePickerCultStart);
             this.groupBox2.Location = new System.Drawing.Point(7, 20);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(207, 166);
+            this.groupBox2.Size = new System.Drawing.Size(313, 190);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sowing Times";
@@ -299,30 +263,51 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Start Date";
             // 
-            // dateTimePicker2
+            // dateTimePickerCultEnd
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(71, 82);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(130, 20);
-            this.dateTimePicker2.TabIndex = 1;
+            this.dateTimePickerCultEnd.Location = new System.Drawing.Point(71, 82);
+            this.dateTimePickerCultEnd.Name = "dateTimePickerCultEnd";
+            this.dateTimePickerCultEnd.Size = new System.Drawing.Size(208, 20);
+            this.dateTimePickerCultEnd.TabIndex = 1;
             // 
-            // dateTimePicker1
+            // dateTimePickerCultStart
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(70, 36);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(131, 20);
-            this.dateTimePicker1.TabIndex = 0;
+            this.dateTimePickerCultStart.Location = new System.Drawing.Point(70, 36);
+            this.dateTimePickerCultStart.Name = "dateTimePickerCultStart";
+            this.dateTimePickerCultStart.Size = new System.Drawing.Size(209, 20);
+            this.dateTimePickerCultStart.TabIndex = 0;
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.buttonIVR);
+            this.groupBox5.Controls.Add(this.buttonSMS);
             this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Controls.Add(this.textBox1);
-            this.groupBox5.Location = new System.Drawing.Point(502, 20);
+            this.groupBox5.Controls.Add(this.textBoxPrice);
+            this.groupBox5.Location = new System.Drawing.Point(538, 20);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(366, 95);
+            this.groupBox5.Size = new System.Drawing.Size(565, 95);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Pricing Information";
+            // 
+            // buttonIVR
+            // 
+            this.buttonIVR.Location = new System.Drawing.Point(465, 38);
+            this.buttonIVR.Name = "buttonIVR";
+            this.buttonIVR.Size = new System.Drawing.Size(94, 40);
+            this.buttonIVR.TabIndex = 3;
+            this.buttonIVR.Text = "Send as IVR";
+            this.buttonIVR.UseVisualStyleBackColor = true;
+            // 
+            // buttonSMS
+            // 
+            this.buttonSMS.Location = new System.Drawing.Point(359, 38);
+            this.buttonSMS.Name = "buttonSMS";
+            this.buttonSMS.Size = new System.Drawing.Size(94, 40);
+            this.buttonSMS.TabIndex = 2;
+            this.buttonSMS.Text = "Send as SMS";
+            this.buttonSMS.UseVisualStyleBackColor = true;
+            this.buttonSMS.Click += new System.EventHandler(this.buttonSMS_Click);
             // 
             // label5
             // 
@@ -333,26 +318,28 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Price";
             // 
-            // textBox1
+            // textBoxPrice
             // 
-            this.textBox1.Location = new System.Drawing.Point(78, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBoxPrice.Location = new System.Drawing.Point(78, 38);
+            this.textBoxPrice.Multiline = true;
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(265, 40);
+            this.textBoxPrice.TabIndex = 0;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(359, 610);
+            this.button2.Location = new System.Drawing.Point(630, 578);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 23);
+            this.button2.Size = new System.Drawing.Size(142, 46);
             this.button2.TabIndex = 5;
             this.button2.Text = "Add  / Edit Crop Mapping";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 35);
+            this.label6.Location = new System.Drawing.Point(55, 61);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 13);
             this.label6.TabIndex = 6;
@@ -361,42 +348,44 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 78);
+            this.label7.Location = new System.Drawing.Point(55, 12);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 13);
             this.label7.TabIndex = 7;
             this.label7.Text = "Districts";
             // 
-            // comboBox2
+            // comboBoxDistricts
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(73, 78);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(169, 21);
-            this.comboBox2.TabIndex = 8;
+            this.comboBoxDistricts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxDistricts.FormattingEnabled = true;
+            this.comboBoxDistricts.Location = new System.Drawing.Point(109, 12);
+            this.comboBoxDistricts.Name = "comboBoxDistricts";
+            this.comboBoxDistricts.Size = new System.Drawing.Size(169, 21);
+            this.comboBoxDistricts.TabIndex = 8;
             // 
             // Crop_Mapping
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 742);
-            this.Controls.Add(this.comboBox2);
+            this.ClientSize = new System.Drawing.Size(1218, 742);
+            this.Controls.Add(this.comboBoxDistricts);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnNewCrop);
+            this.Controls.Add(this.comboBoxCrops);
             this.Name = "Crop_Mapping";
             this.Text = "Crop Mapping";
+            this.Load += new System.EventHandler(this.Crop_Mapping_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFertilizers)).EndInit();
             this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeeds)).EndInit();
             this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesticides)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -410,39 +399,37 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBoxCrops;
+        private System.Windows.Forms.Button btnNewCrop;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker dateTimePickerReapEnd;
+        private System.Windows.Forms.DateTimePicker dateTimePickerReapStart;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerCultEnd;
+        private System.Windows.Forms.DateTimePicker dateTimePickerCultStart;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPrice;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn3;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewComboBoxColumn2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxDistricts;
+        private System.Windows.Forms.DataGridView dataGridViewFertilizers;
+        private System.Windows.Forms.DataGridView dataGridViewSeeds;
+        private System.Windows.Forms.DataGridView dataGridViewPesticides;
+        private System.Windows.Forms.DataGridViewComboBoxColumn ColumnPest;
+        private System.Windows.Forms.DataGridViewComboBoxColumn ColumnSeed;
+        private System.Windows.Forms.DataGridViewComboBoxColumn ColumnFerts;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrice;
+        private System.Windows.Forms.Button buttonSMS;
+        private System.Windows.Forms.Button buttonIVR;
     }
 }

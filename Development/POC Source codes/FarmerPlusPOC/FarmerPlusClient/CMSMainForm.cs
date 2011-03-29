@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace FarmerPlusClient
 {
     public partial class CMSMainForm : Form
@@ -15,6 +16,7 @@ namespace FarmerPlusClient
 
         public CMSMainForm()
         {
+         
             InitializeComponent();
         }
 
@@ -67,12 +69,12 @@ namespace FarmerPlusClient
 
         private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
+            //toolStrip.Visible = toolBarToolStripMenuItem.Checked;
         }
 
         private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
+            //statusStrip.Visible = statusBarToolStripMenuItem.Checked;
         }
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -103,9 +105,111 @@ namespace FarmerPlusClient
             }
         }
 
+
+
         private void CMSMainForm_Load(object sender, EventArgs e)
         {
 
+            userAuthentication();
+               
+          
+
+
         }
+
+        public void userAuthentication()
+        {
+            CMSLogin  UserLogin = new CMSLogin();
+            UserLogin.ShowDialog();     
+
+        }
+
+        public void childFromLoad(Form xForm)
+        {
+             
+             
+            foreach (Form childForm in this.MdiChildren)
+            {
+                if (childForm.GetType() == xForm.GetType())
+                {
+                    childForm.Focus();
+
+                MessageBox.Show("Already Active");                   
+                    return;
+                }                
+            }
+
+            //xForm = new xForm.Name();
+
+            xForm.MdiParent = this;
+            xForm.WindowState = FormWindowState.Maximized;
+            xForm.Show();
+        
+        }
+     
+        private void complaintsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            childFromLoad(new CMSComplaintLog());
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            childFromLoad(new CMSWarningManager());
+        }
+
+        private void locationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            childFromLoad(new CMSLocation());
+        }
+
+        private void cropMappingToolStripMenuItem_Click(object sender, EventArgs e)
+        {  
+            childFromLoad( new Crop_Mapping());
+        }
+
+        private void addNewCropToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_Crop cropForm = new Add_Crop();
+            cropForm.ShowDialog();
+        }
+
+        private void addCompanyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_Company companyForm = new Add_Company();
+            companyForm.ShowDialog();
+        }
+
+        private void addNewSeedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_Seed seedForm = new Add_Seed();
+            seedForm.ShowDialog();
+        }
+
+        private void addNewPesticideToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_Pesticide pesticideForm = new Add_Pesticide();
+            pesticideForm.ShowDialog();
+        }
+
+        private void addNewFertilizerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_Fertilizer fertilizerForm = new Add_Fertilizer();
+            fertilizerForm.ShowDialog();
+        }
+
+        private void addNewAgriEquipmentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_AgriEquipment agriEquipmentForm = new Add_AgriEquipment();
+            agriEquipmentForm.ShowDialog();
+        }
+
+        private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FarmerPlusRecorder recorder = new FarmerPlusRecorder();
+            recorder.ShowDialog();
+            string abc = recorder.filePathToReturn;
+        }
+       
     }
-}
+  
+    }
