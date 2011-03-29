@@ -1,0 +1,17 @@
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\bin\Debug\FarmerPlusScheduarManager.exe.config
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\bin\Debug\FarmerPlusScheduarManager.exe
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\bin\Debug\FarmerPlusScheduarManager.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\obj\x86\Debug\FarmerPlusScheduarManager.Properties.Resources.resources
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\obj\x86\Debug\FarmerPlusScheduarManager.exe
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\obj\x86\Debug\FarmerPlusScheduarManager.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\bin\Debug\smslib-3.5.0.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\bin\Debug\Comm2IP.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\bin\Debug\IKVM.OpenJDK.Core.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\obj\x86\Debug\FarmerPlusScheduarManager.SchedularDashboard.resources
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\bin\Debug\FarmerPlusDataObjectLayer.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\bin\Debug\FarmerPlusDataObjectLayer.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\bin\Debug\SMS_Services.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusScheduarManager\bin\Debug\SMS_Services.pdb

@@ -24,17 +24,38 @@ C:\Users\tahirrauf\Desktop\Miscellaneous\BackupAt-9_JAN_2010\FarmerPlus\Developm
 C:\Users\tahirrauf\Desktop\Miscellaneous\BackupAt-9_JAN_2010\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\tahirrauf\Desktop\Miscellaneous\BackupAt-9_JAN_2010\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\obj\Debug\BusinessManagementLayer.dll
 C:\Users\tahirrauf\Desktop\Miscellaneous\BackupAt-9_JAN_2010\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\obj\Debug\BusinessManagementLayer.pdb
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\BusinessManagementLayer.dll
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\BusinessManagementLayer.pdb
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\FarmerPlusDataAccessLayer.dll
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\Microsoft.Practices.Unity.dll
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\FarmerPlusDataAccessLayer.pdb
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\obj\Debug\BusinessManagementLayer.dll
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\obj\Debug\BusinessManagementLayer.pdb
-C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlus\Development\POC Source codes\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\MySql.Data.dll
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\BusinessManagementLayer.dll
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\BusinessManagementLayer.pdb
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\FarmerPlusDataAccessLayer.dll
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\Microsoft.Practices.Unity.dll
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\FarmerPlusDataAccessLayer.pdb
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\obj\Debug\ResolveAssemblyReference.cache
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\obj\Debug\BusinessManagementLayer.dll
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\obj\Debug\BusinessManagementLayer.pdb
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\FarmerPlusDataObjectLayer.dll
+D:\FYP\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\FarmerPlusDataObjectLayer.pdb
+D:\FYP\LatestCode\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\BusinessManagementLayer.dll
+D:\FYP\LatestCode\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\BusinessManagementLayer.pdb
+D:\FYP\LatestCode\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\FarmerPlusDataAccessLayer.dll
+D:\FYP\LatestCode\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\FarmerPlusDataObjectLayer.dll
+D:\FYP\LatestCode\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\FarmerPlusDataAccessLayer.pdb
+D:\FYP\LatestCode\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\FarmerPlusDataObjectLayer.pdb
+D:\FYP\LatestCode\FarmerPlusPOC\BusinessManagementLayer\obj\Debug\ResolveAssemblyReference.cache
+D:\FYP\LatestCode\FarmerPlusPOC\BusinessManagementLayer\obj\Debug\BusinessManagementLayer.dll
+D:\FYP\LatestCode\FarmerPlusPOC\BusinessManagementLayer\obj\Debug\BusinessManagementLayer.pdb
+D:\FYP\LatestCode\FarmerPlusPOC\BusinessManagementLayer\bin\Debug\MySql.Data.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\BusinessManagementLayer\bin\Debug\BusinessManagementLayer.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\BusinessManagementLayer\bin\Debug\BusinessManagementLayer.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\BusinessManagementLayer\bin\Debug\FarmerPlusDataAccessLayer.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\BusinessManagementLayer\bin\Debug\FarmerPlusDataObjectLayer.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\BusinessManagementLayer\bin\Debug\MySql.Data.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\BusinessManagementLayer\bin\Debug\FarmerPlusDataAccessLayer.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\BusinessManagementLayer\bin\Debug\FarmerPlusDataObjectLayer.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\BusinessManagementLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\BusinessManagementLayer\obj\Debug\BusinessManagementLayer.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\BusinessManagementLayer\obj\Debug\BusinessManagementLayer.pdb

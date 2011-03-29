@@ -10,12 +10,13 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BusinessManagementLayer</RootNamespace>
     <AssemblyName>BusinessManagementLayer</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,12 +51,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business Managers\HelloWorldManager.cs" />
+    <Compile Include="Business Managers\GoogleWeatherService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FarmerPlusDataAccessLayer\FarmerPlusDataAccessLayer.csproj">
       <Project>{1758229E-1765-4A06-8BE3-2B993B0273FD}</Project>
       <Name>FarmerPlusDataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FarmerPlusDataObjectLayer\FarmerPlusDataObjectLayer.csproj">
+      <Project>{5112EE0A-FFB5-472E-8CFF-EF02E1EFDB55}</Project>
+      <Name>FarmerPlusDataObjectLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
