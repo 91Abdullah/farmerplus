@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FarmerPlusDataAccessLayer</RootNamespace>
     <AssemblyName>FarmerPlusDataAccessLayer</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -31,6 +31,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -70,8 +71,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLLs\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\..\MySql.Data.dll</HintPath>
+    <Reference Include="MySql.Data, Version=5.0.8.1, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -91,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataServices\CommonHelper.cs" />
+    <Compile Include="DataServices\CropHelper.cs" />
     <Compile Include="DataServices\HelloWorldDBService.cs" />
     <Compile Include="DataObjects\HelloWorldDAO.cs" />
     <Compile Include="DBUtility.cs" />
@@ -112,6 +115,12 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FarmerPlusDataObjectLayer\FarmerPlusDataObjectLayer.csproj">
+      <Project>{5112EE0A-FFB5-472E-8CFF-EF02E1EFDB55}</Project>
+      <Name>FarmerPlusDataObjectLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,17 @@
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\obj\Release\ResolveAssemblyReference.cache
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\FarmerPlusDataAccessLayer.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\FarmerPlusDataAccessLayer.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\FarmerPlusDataObjectLayer.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\MySql.Data.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\Microsoft.Practices.Unity.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\FarmerPlusDataObjectLayer.pdb
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\obj\Release\FarmerPlusDataAccessLayer.dll
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusDataAccessLayer\obj\Release\FarmerPlusDataAccessLayer.pdb
