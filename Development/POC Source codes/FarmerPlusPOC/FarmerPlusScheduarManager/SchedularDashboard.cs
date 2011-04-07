@@ -24,12 +24,15 @@ namespace FarmerPlusScheduarManager
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.timerSchedular.Enabled = true;
-
-            
+            this.timerSchedular.Enabled = true;           
             
         }
 
+        /// <summary>
+        /// Parses the Wind from Service String
+        /// </summary>
+        /// <param name="windString"></param>
+        /// <returns></returns>
         private int GetCurrentWindSpeed(string windString)
         {
             string[] tokens = windString.Split(" ".ToArray());

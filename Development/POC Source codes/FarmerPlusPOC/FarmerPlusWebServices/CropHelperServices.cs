@@ -20,6 +20,19 @@ namespace FarmerPlusWebServices
         {
         }
 
+        public int InsertComplaint(string complaint_type, string complaint_text, int city_id, string phone_number)
+        { return cropDBHelper.InsertComplaint(complaint_type, complaint_text, city_id, phone_number); }
+        public DataSet GetCropPrice(int city_id, string cropName)
+        { return cropDBHelper.GetCropPrice(city_id, cropName); }
+        public DataSet GetSeedPrice(int city_id, string seedName)
+        { return cropDBHelper.GetSeedPrice(city_id, seedName); }
+
+        public DataSet GetLevelTwoMenu(int sequence_number, int parent_lkp_id)
+        { return cropDBHelper.GetLevelTwoMenu(sequence_number, parent_lkp_id); }
+
+        public DataSet GetLevelOneMenu(int sequence_number)
+        { return cropDBHelper.GetLevelOneMenu(sequence_number); }
+
         public DataSet GetReapingScheduleInfo(string currentDate)
         { return cropDBHelper.GetReapingScheduleInfo(currentDate); }
 
