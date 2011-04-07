@@ -209,6 +209,12 @@ namespace FarmerPlusClient
             recorder.ShowDialog();
             string abc = recorder.filePathToReturn;
         }
+
+        private void sMSSimulatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {            
+            childFromLoad(new SMS_Simulator());
+
+        }
        
     }
   

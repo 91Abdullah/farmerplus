@@ -20,6 +20,11 @@ namespace FarmerPlusWebServices
         {
         }
 
+        public DataSet GetMenus(int application_id, int isexpert)
+        {
+            return cropDBHelper.GetMenus(application_id, isexpert);
+        }
+
         public int InsertComplaint(string complaint_type, string complaint_text, int city_id, string phone_number)
         { return cropDBHelper.InsertComplaint(complaint_type, complaint_text, city_id, phone_number); }
         public DataSet GetCropPrice(int city_id, string cropName)

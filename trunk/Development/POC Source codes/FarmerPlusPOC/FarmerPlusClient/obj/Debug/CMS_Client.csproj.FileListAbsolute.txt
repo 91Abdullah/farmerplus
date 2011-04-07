@@ -107,3 +107,4 @@ C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusClient\bin
 C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusClient\bin\Debug\SMS_Services.pdb
 C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusClient\obj\Debug\ResGen.read.1.tlog
 C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusClient\obj\Debug\ResGen.write.1.tlog
+C:\Users\tahirrauf\Desktop\FarmerPlus\FarmerPlusPOC_7_March\FarmerPlusClient\obj\Debug\FarmerPlusClient.SMS_Simulator.resources

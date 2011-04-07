@@ -55,6 +55,24 @@ namespace FarmerPlusClient.ServiceReferenceCropCommonHelper {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICropHelperServices/GetCultivationScheduleInfo", ReplyAction="http://tempuri.org/ICropHelperServices/GetCultivationScheduleInfoResponse")]
         System.Data.DataSet GetCultivationScheduleInfo(string currentDate);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICropHelperServices/GetLevelTwoMenu", ReplyAction="http://tempuri.org/ICropHelperServices/GetLevelTwoMenuResponse")]
+        System.Data.DataSet GetLevelTwoMenu(int sequence_number, int parent_lkp_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICropHelperServices/GetLevelOneMenu", ReplyAction="http://tempuri.org/ICropHelperServices/GetLevelOneMenuResponse")]
+        System.Data.DataSet GetLevelOneMenu(int sequence_number);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICropHelperServices/InsertComplaint", ReplyAction="http://tempuri.org/ICropHelperServices/InsertComplaintResponse")]
+        int InsertComplaint(string complaint_type, string complaint_text, int city_id, string phone_number);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICropHelperServices/GetCropPrice", ReplyAction="http://tempuri.org/ICropHelperServices/GetCropPriceResponse")]
+        System.Data.DataSet GetCropPrice(int city_id, string cropName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICropHelperServices/GetSeedPrice", ReplyAction="http://tempuri.org/ICropHelperServices/GetSeedPriceResponse")]
+        System.Data.DataSet GetSeedPrice(int city_id, string seedName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICropHelperServices/GetMenus", ReplyAction="http://tempuri.org/ICropHelperServices/GetMenusResponse")]
+        System.Data.DataSet GetMenus(int application_id, int isexpert);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -134,6 +152,30 @@ namespace FarmerPlusClient.ServiceReferenceCropCommonHelper {
         
         public System.Data.DataSet GetCultivationScheduleInfo(string currentDate) {
             return base.Channel.GetCultivationScheduleInfo(currentDate);
+        }
+        
+        public System.Data.DataSet GetLevelTwoMenu(int sequence_number, int parent_lkp_id) {
+            return base.Channel.GetLevelTwoMenu(sequence_number, parent_lkp_id);
+        }
+        
+        public System.Data.DataSet GetLevelOneMenu(int sequence_number) {
+            return base.Channel.GetLevelOneMenu(sequence_number);
+        }
+        
+        public int InsertComplaint(string complaint_type, string complaint_text, int city_id, string phone_number) {
+            return base.Channel.InsertComplaint(complaint_type, complaint_text, city_id, phone_number);
+        }
+        
+        public System.Data.DataSet GetCropPrice(int city_id, string cropName) {
+            return base.Channel.GetCropPrice(city_id, cropName);
+        }
+        
+        public System.Data.DataSet GetSeedPrice(int city_id, string seedName) {
+            return base.Channel.GetSeedPrice(city_id, seedName);
+        }
+        
+        public System.Data.DataSet GetMenus(int application_id, int isexpert) {
+            return base.Channel.GetMenus(application_id, isexpert);
         }
     }
 }
