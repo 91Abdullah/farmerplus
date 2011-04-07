@@ -52,6 +52,20 @@ namespace FarmerPlusWebServices
 
         [OperationContract]
         DataSet GetCultivationScheduleInfo(string currentDate);
-        
+
+        [OperationContract]
+        DataSet GetLevelTwoMenu(int sequence_number, int parent_lkp_id);
+
+        [OperationContract]
+        DataSet GetLevelOneMenu(int sequence_number);
+
+        [OperationContract]
+        int InsertComplaint(string complaint_type, string complaint_text, int city_id, string phone_number);
+
+        [OperationContract]
+        DataSet GetCropPrice(int city_id, string cropName);
+
+        [OperationContract]
+        DataSet GetSeedPrice(int city_id, string seedName);
     }
 }

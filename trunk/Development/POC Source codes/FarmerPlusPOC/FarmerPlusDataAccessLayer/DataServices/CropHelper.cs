@@ -456,6 +456,155 @@ namespace FarmerPlusDataAccessLayer
 
         #endregion
 
+        #region Menus
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sequence_number"></param>
+        /// <returns></returns>
+         public DataSet GetLevelOneMenu(int sequence_number)
+         {
+             MySqlConnection conn = DBUtility.getConnection();
+
+             try
+             {
+                 MySqlDataAdapter dapt = new MySqlDataAdapter("SELECT l.item_name, l.id FROM menu_hierarchies m, lookups l where " +
+                        " m.menu_lkp_id = l.id and m.menu_hierarchy_level = 0 " +
+                        " and m.application_id = 1 and m.sequence_number = " + sequence_number.ToString(), conn);
+
+                 DataSet dataSet = new DataSet();
+                 dapt.Fill(dataSet);
+
+                 conn.Close();
+
+                 return dataSet;
+             }
+             catch (Exception ex)
+             {
+                 DBUtility.closeConnection(conn);
+                 return null;
+             }
+         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sequence_number"></param>
+        /// <returns></returns>
+         public DataSet GetLevelTwoMenu(int sequence_number, int parent_lkp_id)
+         {
+             MySqlConnection conn = DBUtility.getConnection();
+
+             try
+             {
+                 MySqlDataAdapter dapt = new MySqlDataAdapter("SELECT l.item_name FROM menu_hierarchies m, lookups l where "+
+                " m.menu_lkp_id = l.id and m.menu_hierarchy_level = 1 "+
+                " and m.application_id = 1 and m.sequence_number = " + sequence_number.ToString() 
+                + " and menu_parent_lkp_id = " + parent_lkp_id.ToString(), conn);
+
+                 DataSet dataSet = new DataSet();
+                 dapt.Fill(dataSet);
+
+                 conn.Close();
+
+                 return dataSet;
+             }
+             catch (Exception ex)
+             {
+                 DBUtility.closeConnection(conn);
+                 return null;
+             }
+         }
+
+        #endregion
+
+        #region Pull Services
+
+         
+         public DataSet GetSeedPrice(int city_id, string seedName)
+         {
+             MySqlConnection conn = DBUtility.getConnection();
+
+             try
+             {
+                 MySqlDataAdapter dapt = new MySqlDataAdapter("select cs.price, sem.urdu_translation from seeds s, crop_mappings c, semantics sem, crop_seeds "+
+                    " cs, cities where s.id = cs.seed_id and cs.crop_mapping_id = c.id and c.district_id = cities.district_id and "+                    " s.semantics_id = sem.id and s.seed_name = '"+seedName+"' and cities.id = "+city_id.ToString(), conn);
+                 DataSet dataSet = new DataSet();
+                 dapt.Fill(dataSet);
+
+                 conn.Close();
+
+                 return dataSet;
+             }
+             catch (Exception ex)
+             {
+                 DBUtility.closeConnection(conn);
+                 return null;
+             }
+         }
+
+         public DataSet GetCropPrice(int city_id, string cropName)
+         {
+             MySqlConnection conn = DBUtility.getConnection();
+
+             try
+             {
+                 MySqlDataAdapter dapt = new MySqlDataAdapter(" SELECT c.price, s.urdu_translation  FROM crop_mappings c, cities, lookups l, semantics s where s.id = " +                    " l.semantics_id and cities.district_id = c.district_id and l.id = c.crop_lkp_id and l.item_name = '"+cropName+"'" +
+                    " and cities.id = " + city_id, conn);
+                 DataSet dataSet = new DataSet();
+                 dapt.Fill(dataSet);
+
+                 conn.Close();
+
+                 return dataSet;
+             }
+             catch (Exception ex)
+             {
+                 DBUtility.closeConnection(conn);
+                 return null;
+             }
+         }
+
+         public int InsertComplaint(string complaint_type, string complaint_text, int city_id, string phone_number)
+         {
+             MySqlConnection conn = DBUtility.getConnection();
+
+             try
+             {
+                 int complaint_type_id = 0;
+
+                 switch (complaint_type)
+                 {
+                     case "Delayed Purchasing":
+                         complaint_type_id = 9;
+                         break;
+                     case "Unfair Pricing":
+                         complaint_type_id = 10;
+                         break;
+                     case "Adulteration of Pesticides":
+                         complaint_type_id = 11;
+                         break;
+                 }
+
+                 MySqlCommand cmd = new MySqlCommand(" insert into complaintlog (CITY_ID, PHONE_NUMBER, DATE_TIME, COMPLAINT_CATEGORY_LKP_ID, SERVICE_LKP_ID, SEMANTICS_ID) " +
+                   " values ("+city_id.ToString()+", '"+phone_number+"', '"+DateTime.Today.ToShortDateString()+"', "+complaint_type_id.ToString()+", 12, 1)", conn);
+
+                 int status = cmd.ExecuteNonQuery();
+
+                 conn.Close();
+
+                 return status;
+             }
+             catch (Exception ex)
+             {
+                 DBUtility.closeConnection(conn);
+                 return -1;
+             }
+         }
+
+        #endregion
+
 
     }
 }
