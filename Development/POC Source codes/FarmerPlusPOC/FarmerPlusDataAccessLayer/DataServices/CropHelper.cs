@@ -529,7 +529,8 @@ namespace FarmerPlusDataAccessLayer
              try
              {
                  MySqlDataAdapter dapt = new MySqlDataAdapter("select cs.price, sem.urdu_translation from seeds s, crop_mappings c, semantics sem, crop_seeds "+
-                    " cs, cities where s.id = cs.seed_id and cs.crop_mapping_id = c.id and c.district_id = cities.district_id and "+                    " s.semantics_id = sem.id and s.seed_name = '"+seedName+"' and cities.id = "+city_id.ToString(), conn);
+                    " cs, cities where s.id = cs.seed_id and cs.crop_mapping_id = c.id and c.district_id = cities.district_id and "+
+                    " s.semantics_id = sem.id and s.seed_name = '"+seedName+"' and cities.id = "+city_id.ToString(), conn);
                  DataSet dataSet = new DataSet();
                  dapt.Fill(dataSet);
 
@@ -550,7 +551,8 @@ namespace FarmerPlusDataAccessLayer
 
              try
              {
-                 MySqlDataAdapter dapt = new MySqlDataAdapter(" SELECT c.price, s.urdu_translation  FROM crop_mappings c, cities, lookups l, semantics s where s.id = " +                    " l.semantics_id and cities.district_id = c.district_id and l.id = c.crop_lkp_id and l.item_name = '"+cropName+"'" +
+                 MySqlDataAdapter dapt = new MySqlDataAdapter(" SELECT c.price, s.urdu_translation  FROM crop_mappings c, cities, lookups l, semantics s where s.id = " +
+                    " l.semantics_id and cities.district_id = c.district_id and l.id = c.crop_lkp_id and l.item_name = '"+cropName+"'" +
                     " and cities.id = " + city_id, conn);
                  DataSet dataSet = new DataSet();
                  dapt.Fill(dataSet);
@@ -587,9 +589,13 @@ namespace FarmerPlusDataAccessLayer
                          break;
                  }
 
-                 MySqlCommand cmd = new MySqlCommand(" insert into complaintlog (CITY_ID, PHONE_NUMBER, DATE_TIME, COMPLAINT_CATEGORY_LKP_ID, SERVICE_LKP_ID, SEMANTICS_ID) " +
-                   " values ("+city_id.ToString()+", '"+phone_number+"', '"+DateTime.Today.ToShortDateString()+"', "+complaint_type_id.ToString()+", 12, 1)", conn);
+                 CommonHelper ch = new CommonHelper();
+                 int semantics_id = ch.InsertAndGetSemantics("N/A", complaint_text);
 
+                 MySqlCommand cmd = new MySqlCommand(" insert into complaintlog (CITY_ID, PHONE_NUMBER, DATE_TIME, COMPLAINT_CATEGORY_LKP_ID, SERVICE_LKP_ID, SEMANTICS_ID) " +
+
+                   " values ("+city_id.ToString()+", '"+phone_number+"', '"+DateTime.Today.ToShortDateString()+"', "+complaint_type_id.ToString()+", 12, " + semantics_id.ToString() + ")", conn);
+                
                  int status = cmd.ExecuteNonQuery();
 
                  conn.Close();
@@ -600,6 +606,31 @@ namespace FarmerPlusDataAccessLayer
              {
                  DBUtility.closeConnection(conn);
                  return -1;
+             }
+         }
+
+         public DataSet GetMenus(int application_id, int isexpert)
+         {
+             MySqlConnection conn = DBUtility.getConnection();
+
+             try
+             {
+                 MySqlDataAdapter dapt = new MySqlDataAdapter("SELECT lparent.item_name as MenuName, " +
+                    " mparent.sequence_number MenuServiceId, l.item_name as ServiceName, m.sequence_number ServiceId "+
+                    " FROM menu_hierarchies m, lookups l, lookups lparent, menu_hierarchies mparent WHERE mparent.menu_lkp_id = m.menu_parent_lkp_id "+
+                    " and lparent.id = m.menu_parent_lkp_id "+
+                    " and l.id = m.menu_lkp_id and m.ISEXPERTUSER = " + isexpert.ToString() + "  and m.menu_hierarchy_level = 1 and m.application_id = " + application_id.ToString() , conn);
+                 DataSet dataSet = new DataSet();
+                 dapt.Fill(dataSet);
+
+                 conn.Close();
+
+                 return dataSet;
+             }
+             catch (Exception ex)
+             {
+                 DBUtility.closeConnection(conn);
+                 return null;
              }
          }
 

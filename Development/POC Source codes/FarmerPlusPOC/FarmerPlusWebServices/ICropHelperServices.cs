@@ -67,5 +67,8 @@ namespace FarmerPlusWebServices
 
         [OperationContract]
         DataSet GetSeedPrice(int city_id, string seedName);
+
+        [OperationContract]
+        DataSet GetMenus(int application_id, int isexpert);
     }
 }
