@@ -40,8 +40,64 @@ namespace FarmerPlusScheduarManager
             return int.Parse(tokens[tokens.Length - 2]);
         }
 
-        private void timerSchedular_Tick(object sender, EventArgs e)
-        {            
+        void WeatherScheduleFunctionality()
+        {
+            string weatherService = System.Configuration.ConfigurationSettings.AppSettings["WeatherServices"].ToString();
+            SMS_Manager smsManager = new SMS_Manager();
+
+            if (weatherService.ToLower().Equals("on"))
+            {
+                DataSet cities = commonServiceClient.GetCitiesList();
+
+                // wind
+                foreach (DataRow city in cities.Tables[0].Rows)
+                {
+
+                    #region Wind
+
+                    int windLevel = int.Parse(System.Configuration.ConfigurationSettings.AppSettings["WindLevel"].ToString());
+
+                    ServiceReferenceWeather.Conditions conditions = new ServiceReferenceWeather.Conditions();
+
+                    conditions = weatherServiceClient.GetCurrentConditions("cc " + city[1].ToString().ToLower());
+
+                    int currentWindLevel = GetCurrentWindSpeed(conditions.Wind);
+
+                    if (currentWindLevel > windLevel)
+                    {
+                        DataTable phoneNumbers = commonServiceClient.GetCallerOfACity(int.Parse(city[0].ToString())).Tables[0];
+
+                        foreach (DataRow phoneWalker in phoneNumbers.Rows)
+                        {
+                            smsManager.ThrowSms("آج آندھی کا امکان ہے۔", phoneWalker[0].ToString());
+                        }
+                    }
+
+                    #endregion
+
+
+                    #region Rain
+
+                    if (conditions.Condition.ToLower().Contains("rain"))
+                    {
+                        DataTable phoneNumbers = commonServiceClient.GetCallerOfACity(int.Parse(city[0].ToString())).Tables[0];
+
+                        foreach (DataRow phoneWalker in phoneNumbers.Rows)
+                        {
+                            smsManager.ThrowSms("آج بارش کا امکان ہے ۔", phoneWalker[0].ToString());
+                        }
+                    }
+
+                    #endregion
+
+
+
+                }
+            }
+        }
+
+        void CropScheduleFunctionality()
+        {
             string cultivationService = System.Configuration.ConfigurationSettings.AppSettings["CultivationSchedular"].ToString();
             string reapingService = System.Configuration.ConfigurationSettings.AppSettings["ReapingShcedular"].ToString();
 
@@ -62,8 +118,8 @@ namespace FarmerPlusScheduarManager
 
                     foreach (DataRow phoneWalker in phoneNumbers.Rows)
                     {
-                        smsManager.ThrowSms( rowWalker[1].ToString() + " کی کاشت کا وقت آ گیا ہے۔", phoneWalker[0].ToString());
-                    }                    
+                        smsManager.ThrowSms(rowWalker[1].ToString() + " کی کاشت کا وقت آ گیا ہے۔", phoneWalker[0].ToString());
+                    }
                 }
             }
 
@@ -83,65 +139,30 @@ namespace FarmerPlusScheduarManager
                     foreach (DataRow phoneWalker in phoneNumbers.Rows)
                     {
                         smsManager.ThrowSms(rowWalker[1].ToString() + " کی کٹائی کا وقت آ گیا ہے۔", phoneWalker[0].ToString());
-                    } 
+                    }
                 }
             }                         
+        }
+        
+
+        private void timerSchedular_Tick(object sender, EventArgs e)
+        {
+            CropScheduleFunctionality();
         }
 
         private void timerWeather_Tick(object sender, EventArgs e)
         {
-            string weatherService = System.Configuration.ConfigurationSettings.AppSettings["WeatherServices"].ToString();
-            SMS_Manager smsManager = new SMS_Manager();
+            WeatherScheduleFunctionality();
+        }
 
-            if (weatherService.ToLower().Equals("on"))
-            {
-                DataSet cities = commonServiceClient.GetCitiesList();
+        private void buttonCropSchedular_Click(object sender, EventArgs e)
+        {
+            CropScheduleFunctionality();
+        }
 
-                // wind
-                foreach(DataRow city in cities.Tables[0].Rows)
-                {
-
-                    #region Wind 
-
-                    int windLevel = int.Parse(System.Configuration.ConfigurationSettings.AppSettings["WindLevel"].ToString());
-
-                    ServiceReferenceWeather.Conditions conditions = new ServiceReferenceWeather.Conditions();
-
-                    conditions = weatherServiceClient.GetCurrentConditions("cc " + city[1].ToString().ToLower());
-
-                    int currentWindLevel = GetCurrentWindSpeed(conditions.Wind);
-
-                    if (currentWindLevel > windLevel)
-                    {
-                        DataTable phoneNumbers = commonServiceClient.GetCallerOfACity(int.Parse(city[0].ToString())).Tables[0];
-
-                        foreach (DataRow phoneWalker in phoneNumbers.Rows)
-                        {
-                            smsManager.ThrowSms("آج آندھی کا امکان ہے۔", phoneWalker[0].ToString());
-                        } 
-                    }
-
-                    #endregion
-
-
-                    #region Rain
-
-                    if (conditions.Condition.ToLower().Contains("rain"))
-                    {
-                        DataTable phoneNumbers = commonServiceClient.GetCallerOfACity(int.Parse(city[0].ToString())).Tables[0];
-
-                        foreach (DataRow phoneWalker in phoneNumbers.Rows)
-                        {
-                            smsManager.ThrowSms("آج بارش کا امکان ہے ۔", phoneWalker[0].ToString());
-                        } 
-                    }
-
-                    #endregion 
-
-
-
-                }
-            }
+        private void buttonWeatherSchedular_Click(object sender, EventArgs e)
+        {
+            WeatherScheduleFunctionality();
         }
     }
 }

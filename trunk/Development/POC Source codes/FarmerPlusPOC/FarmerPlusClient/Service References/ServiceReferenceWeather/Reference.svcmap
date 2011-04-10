@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="38b076cd-f22b-4883-ab17-dbc80906034d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8732/Design_Time_Addresses/FarmerPlusWebServices/WeatherServices/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="036f05fb-eee2-4c94-83b0-2a6d5cc716f6" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/FarmerPlusWebServices/WeatherServices/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="aa90717d-28fa-4b81-a665-cb03da6b312d" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/FarmerPlusWebServices/WeatherServices/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="48bd6617-6515-4a06-9961-436b35739315" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/FarmerPlusWebServices/WeatherServices/mex" />
+    <MetadataFile FileName="FarmerPlusDataObjectLayer.xsd" MetadataType="Schema" ID="cd0a4365-8a28-48cb-8710-1ab662317230" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/FarmerPlusWebServices/WeatherServices/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
