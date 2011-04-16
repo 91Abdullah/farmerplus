@@ -84,7 +84,11 @@ namespace FarmerPlusWebServices
 
         [OperationContract]
         string GetUrduNameOfALookupId(int lkp_id);
+        
+        [OperationContract]
+         int GetCityId(string vendorCode, string codeRange);
 
-
+        [OperationContract]
+        string GetCityUrduName(int cityId);
     }
 }

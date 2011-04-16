@@ -368,6 +368,35 @@ namespace FarmerPlusDataAccessLayer
             }
         }
 
+        /// <summary>
+        /// Get Id for a city based on vendorcode and vendor location rnage
+        /// </summary>
+        /// <param name="cityName"></param>
+        /// <returns></returns>
+      public int GetCityIdforLocationServices(string vendorCode, string rangeCode)
+        {
+            MySqlConnection conn = DBUtility.getConnection();
+
+            try
+            {
+                MySqlDataAdapter dapt = new MySqlDataAdapter("select C.ID from cities c, phone_locations_mappings p, vendor_phone_codes v where ((p.city_id= C.ID) and ((" + rangeCode + ">= p.Start_Range) and (" + rangeCode + "<=p.End_range)) and (p.VENDOR_PHONE_CODE_ID = v.ID) and (v.phone_code='" + vendorCode + "'))", conn);
+
+                DataSet dataSet = new DataSet();
+                dapt.Fill(dataSet);
+
+
+                int cityId = int.Parse(dataSet.Tables[0].Rows[0][0].ToString());
+
+                conn.Close();
+
+                return cityId;
+            }
+            catch (Exception ex)
+            {
+                DBUtility.closeConnection(conn);
+                return -1;
+            }
+        }
         #endregion
 
         #region Profile Helper Routines
@@ -879,7 +908,7 @@ namespace FarmerPlusDataAccessLayer
              try
              {
 
-                 MySqlDataAdapter dapt = new MySqlDataAdapter("SELECT * FROM caller_history c where c.phone_number = '"+number+"'", conn);
+                 MySqlDataAdapter dapt = new MySqlDataAdapter("SELECT * FROM caller_history c where c.phone_number = '"+number+"'", conn1);
 
                  dataSet = new DataSet();
                  dapt.Fill(dataSet);

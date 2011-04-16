@@ -166,6 +166,11 @@ namespace FarmerPlusWebServices
             return commonDBHelper.GetCitiesList();
         }
 
+        public int GetCityId(string vendorCode, string codeRange)
+        {
+            return commonDBHelper.GetCityIdforLocationServices(vendorCode, codeRange);
+        }
+
 
         public int InsertInAgriEquipmentMapping(int agriequiplkpid, int city_id, int company_id, int price)
         {
@@ -175,6 +180,11 @@ namespace FarmerPlusWebServices
         public DataSet GetDistrictsList()
         {
             return commonDBHelper.GetDistrictsList();
+        }
+
+        public string GetCityUrduName(int cityId)
+        {
+            return commonDBHelper.GetCityUrduName(cityId);
         }
     }
 }

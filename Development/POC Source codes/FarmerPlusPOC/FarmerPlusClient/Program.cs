@@ -20,7 +20,7 @@ namespace FarmerPlusClient
 
          Application.Run(new CMSMainForm());
 
-        // Application.Run(new SMSWeather());
+       // Application.Run(new SMSWeather());
 
 
 
