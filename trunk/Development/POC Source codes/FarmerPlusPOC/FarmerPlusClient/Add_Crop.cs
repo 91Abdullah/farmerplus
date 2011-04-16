@@ -16,7 +16,7 @@ namespace FarmerPlusClient
         ServiceReferenceCommonHelper.CommonHelperServiceClient commonServiceClient = new FarmerPlusClient.ServiceReferenceCommonHelper.CommonHelperServiceClient();
         public Add_Crop()
         {
-            InitializeComponent();
+            InitializeComponent();         
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
@@ -28,6 +28,7 @@ namespace FarmerPlusClient
             commonServiceClient.InsertInLookup(this.textBoxName.Text, crop_group_id, semantics_id);
 
             this.Close();
+            
         }
 
         private void Add_Crop_Load(object sender, EventArgs e)
