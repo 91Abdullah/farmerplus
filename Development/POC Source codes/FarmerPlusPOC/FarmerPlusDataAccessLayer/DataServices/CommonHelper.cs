@@ -863,6 +863,108 @@ namespace FarmerPlusDataAccessLayer
 
         #endregion
 
+        #region SMS PULL
+
+         /// <summary>
+         /// 
+         /// </summary>
+         /// <param name="file_path"></param>
+         /// <param name="urdu_text"></param>
+         /// <returns></returns>
+         public int GetCallerHistory(string number, int city_id, int is_expert)
+         {
+             DataSet dataSet = null;
+             MySqlConnection conn1 = DBUtility.getConnection();
+
+             try
+             {
+
+                 MySqlDataAdapter dapt = new MySqlDataAdapter("SELECT * FROM caller_history c where c.phone_number = '"+number+"'", conn);
+
+                 dataSet = new DataSet();
+                 dapt.Fill(dataSet);
+
+                 conn1.Close();
+
+             }
+             catch (Exception ex)
+             {
+                 DBUtility.closeConnection(conn1);
+                 return -1;
+             }
+
+             if (dataSet.Tables[0].Rows.Count > 0)
+             {
+                 MySqlConnection conn = DBUtility.getConnection();
+
+                 try
+                 {
+                     MySqlCommand cmd = new MySqlCommand("update caller_history c set last_call_date = '"+DateTime.Today.ToString()+
+                         "', user_type_lkp_id = "+is_expert+" where phone_number = '"+number+ "'" , conn);
+
+                     int status = cmd.ExecuteNonQuery();
+
+                     conn.Close();
+
+                     return int.Parse(dataSet.Tables[0].Rows[0][0].ToString());
+
+                 }
+                 catch (Exception ex)
+                 {
+                     DBUtility.closeConnection(conn);
+                     return -1;
+                 }
+             }
+             else
+             {
+
+                 MySqlConnection conn = DBUtility.getConnection();
+
+                 try
+                 {
+                     MySqlCommand cmd = new MySqlCommand("insert into caller_history (phone_number, LAST_CALL_DATE, CITY_ID, IS_PUSH_SERVICE, USER_TYPE_LKP_ID) " +
+                    " VALUES ('"+number+"', '"+ DateTime.Today.ToString()+"',"+city_id.ToString()+" ,1 , " + is_expert + " );", conn);
+
+                     int status = cmd.ExecuteNonQuery();
+
+                     conn.Close();
+
+                     MySqlConnection conn2 = DBUtility.getConnection();
+
+                     try
+                     {
+
+                         MySqlDataAdapter dapt = new MySqlDataAdapter("select max(id) from caller_history", conn);
+
+                         DataSet dataSet1 = new DataSet();
+                         dapt.Fill(dataSet1);
+
+
+                         int semantics_id = int.Parse(dataSet1.Tables[0].Rows[0][0].ToString());
+
+                         conn2.Close();
+
+                         return semantics_id;
+
+                     }
+                     catch (Exception ex)
+                     {
+                         DBUtility.closeConnection(conn2);
+                         return -1;
+                     }
+
+                 }
+                 catch (Exception ex)
+                 {
+                     DBUtility.closeConnection(conn);
+                     return -1;
+                 }
+ 
+             }            
+         }
+
+        #endregion
+
 
     }
 }

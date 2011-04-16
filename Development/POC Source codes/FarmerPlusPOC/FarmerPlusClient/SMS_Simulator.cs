@@ -149,15 +149,7 @@ namespace FarmerPlusClient
                             break;
                         #endregion
 
-                        #region Advisory
-                        case "Advisory":
-                            switch (levelTwoMenuText)
-                            {
-                                case "Crop Cultivation":
-                                    break;
-                            }
-                            break;
-                        #endregion
+                      
                     }
 
 
