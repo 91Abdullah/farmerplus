@@ -79,16 +79,16 @@ namespace FarmerPlusClient
             Conditions conditions = new Conditions();
 
 
-            WeatherServicesReference.WeatherServicesClient Ws = new FarmerPlusClient.WeatherServicesReference.WeatherServicesClient();
+            ServiceReferenceCommonWeather.CommonWeatherServicesClient weatherServiceClient = new ServiceReferenceCommonWeather.CommonWeatherServicesClient();
 
 
-            conditions = Ws.GetCurrentConditions(input.Substring(2, input.Length - 2));
+            conditions = weatherServiceClient.GetCurrentConditions(input.Substring(2, input.Length - 2));
 
             string messageString="";
 
             FillTxtDiaplay(ref conditions, ref messageString );
 
-            ThrowSms(messageString);
+        //    ThrowSms(messageString);
 
            
            
@@ -103,13 +103,13 @@ namespace FarmerPlusClient
             {
               // txtDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
-                messageString = "موسم:" + conditions.Condition;// +"\r\n"; ;
-            //   txtDisplay.Text = txtDisplay.Text + "درجہ حرارت (°F): " + conditions.TempF;
-              //  txtDisplay.Text = txtDisplay.Text + "درجہ حرارت " + conditions.TempC + "\r\n"; ; //+ System.Environment.NewLine;
-             //  txtDisplay.Text = txtDisplay.Text + conditions.Humidity;// + "\r\n";
-            //  txtDisplay.Text = txtDisplay.Text + conditions.Wind;
-                //txtDisplay.Text = txtDisplay.Text + "Humidity: " + conditions.Humidity + "\r\n";
-                //txtDisplay.Text = txtDisplay.Text + "Wind:" + conditions.Wind;
+             //   messageString = "موسم:" + conditions.Condition;// +"\r\n"; ;
+                txtDisplay.Text = txtDisplay.Text + "درجہ حرارت (°F): " + conditions.TempF;
+                txtDisplay.Text = txtDisplay.Text + "درجہ حرارت " + conditions.TempC + "\r\n"; ; //+ System.Environment.NewLine;
+                txtDisplay.Text = txtDisplay.Text + conditions.Humidity;// + "\r\n";
+                txtDisplay.Text = txtDisplay.Text + conditions.Wind;
+                txtDisplay.Text = txtDisplay.Text + "Humidity: " + conditions.Humidity + "\r\n";
+                txtDisplay.Text = txtDisplay.Text + "Wind:" + conditions.Wind;
 
 
 

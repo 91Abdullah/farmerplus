@@ -11,7 +11,7 @@ namespace FarmerPlusClient
 {
     public partial class CMSLogin : Form
     {
-        ServiceReferenceCommonHelper.CommonHelperServiceClient commonServiceClient = new FarmerPlusClient.ServiceReferenceCommonHelper.CommonHelperServiceClient();
+        ServiceReferenceCommonHelper.CommonHelperServiceClient commonServiceClient = new ServiceReferenceCommonHelper.CommonHelperServiceClient();
 
         public CMSLogin()
         {
